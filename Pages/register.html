@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://primat.se/services/sendform.aspx?xid=registrering&xmail=test@primat.se" method="post">
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" placeholder="Name"> <br>
+        <br>
+        <label for="expectations">Your expectations</label> <br>
+        <textarea name="expectations" id="expectations" rows="5" cols="80"></textarea> <br>
+
+        <p>Choose a food</p>
+        <input type="radio" name="food" id="meat" value="meat">
+        <label for="meat">Meat</label> <br>
+        <input type="radio" name="food" id="fish" value="fish">
+        <label for="fish">Fish</label> <br>
+        <input type="radio" name="food" id="veg" value="veg">
+        <label for="veg">Vegetarian</label> <br>
+
+        <input type="checkbox" name="newsletter" value="ja">
+        <input type="hidden" name="newsletter" value="nej">
+        <label for="newsletter"> Do you want newsletter?</label><br>
+
+        <input type="date" name="theDate" id="theDate"> <br>
+        <input type="number" name="antal" id="antal" min="0" max="10" step="2"><br>
+        <input type="color" name="shirtcolor" id="shirtcolor"><br>  
+        <input type="email" name="email" id="email"> <br>
+        <input type="submit" value="Submit">
+
+        <select name="cars">
+            <option value="">---</option>
+            <option value="volvo">Volvo</option>
+            <option value="volvo">Volkswagen</option>
+            <option value="volvo">Audi</option>
+            <option value="volvo">BMW</option>
+            <option value="volvo">Toyota</option>
+            <option value="volvo">Ford</option>
+            <option value="volvo">Seat</option>
+        </select>
+    </form>
+</body>
+
+</html>
